@@ -11,4 +11,4 @@
         完成依赖安装
     4.进入程序文件的Scripts文件夹中输入CMD进入DOS界面，输入activate激活虚环境，
         cd myshop打开项目文件。启用python manage.py runserver 运行购物网站。
-![image](https://github.com/chenGGnan/Django-myshop/raw/master/myshop/runserver.png)
+![image](https://github.com/chenGGnan/Django-myshop/raw/master/runserver.png)
