@@ -1,8 +1,8 @@
 # Django-myshop
 使用python语言的Django框架写的一个个人购物网站
 # 运行
-1.安装python3.6\<br>  
-2. 打开一个目录，进入Dos，用以下命令来为你的新项目创建一个虚拟环境，然后激活它：输入：\<br>  
+    1.安装python3.6\<br>  
+    2. 打开一个目录，进入Dos，用以下命令来为你的新项目创建一个虚拟环境，然后激活它：输入：\<br>  
 mkdir env\<br>  
 virtualenv env\<br>  
 3.将myshop文件放入Scripts文件中。将myshop中的pip_list.txt文件放至Scripts中，\<br>  
