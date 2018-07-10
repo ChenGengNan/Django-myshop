@@ -1,0 +1,61 @@
+1.新建一个django project
+django-admin startproject project_name
+2.新建 app
+python manage.py startapp app_name
+3.创建数据库表或更改数据库表或字段（在项目的目录下）
+#1.创建更改的文件
+python manage.py makemigrations
+#2.将生成的py文件应用到数据库
+python manage.py migrate
+4.使用开发服务器
+python manage.py runserver
+#当提示端口被占用的时候，可以用其它端口：
+（1）python manage.py runserver 8001
+（2）python manage.py runserver 9999
+（当然也可以kill掉占用端口的进程，具体后面有讲，此处想知道的同学可查下 lsof 命令用法）
+# 监听机器所有可用ip（电脑可能有多个内网ip或多个外网ip）
+python manage.py runserver 0.0.0.0:8000
+# 如果是外网或者局域网电脑上可以用其它电脑查看开发服务器
+# 访问对应的 ip加端口，比如 http://172.16.20.2:8000
+5.清空数据库
+python manage.py flush
+6.创建超级管理员
+python manage.py createsuperuser
+ 
+#按照提示输入用户名和对应的密码就好了邮箱可以留空，用户名和密码必填
+ 
+#修改用户密码可以用：
+python manage.py changepassword username
+7.导出数据导入数据
+python manage.py dumpdata appname > appname.json
+python manage.py loaddata appname.json
+8.Django项目环境终端
+python manage.py shell
+如果你安装了 bpython 或 ipython 会自动用它们的界面，推荐安装 bpython。
+这个命令和直接运行python或bpython进入shell的区别是：你可以在这个shell里面调用当前项目的models.py中的API，对于操作数据，还有一些小测试非常方便。
+9.数据库命令行
+python manage.py dbshell
+Django会自动进入在settings.py中设置的数据库，如果是MySQL或postgreSQL,会要求输入数据库用户密码。
+在这个终端可以执行数据库的SQL语句。如果您对SQL比较熟悉，可能喜欢这种方式。
+10.更多命令
+终端上输入 python manage.py 可以看到详细的列表，在忘记子名称的时候特别有用。
+
+
+
+shell命令
+项目目录下输入
+python manage.py shell
+from django.core.urlresolvers import reverse
+from django.conf.urls import patterns, url, include
+reverse('add2', args=(4,5))
+reverse 接收 url 中的 name 作为第一个参数，我们在代码中就可以通过 reverse() 来获取对应的网址（这个网址可以用来跳转，也可以用来计算相关页面的地址），只要对应的 url 的name不改，就不用改代码中的网址。
+
+
+修改密码
+http://blog.csdn.net/Z_LiT0/article/details/51992307
+
+
+
+
+
+
