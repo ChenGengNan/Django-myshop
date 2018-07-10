@@ -5,9 +5,9 @@
     2. 打开一个目录，进入Dos，用以下命令来为你的新项目创建一个虚拟环境，然后激活它：输入：\<br>  
         mkdir env\<br>  
         virtualenv env\<br>  
-        3.将myshop文件放入Scripts文件中。将myshop中的pip_list.txt文件放至Scripts中，\<br>  
+    3.将myshop文件放入Scripts文件中。将myshop中的pip_list.txt文件放至Scripts中，\<br>  
         在Script目录下进入命令行窗口，执行\<br>  
         pip install -r pip_list.txt\<br>  
         完成依赖安装\<br>  
-        4.进入程序文件的Scripts文件夹中输入CMD进入DOS界面，输入activate激活虚环境，\<br>  
+    4.进入程序文件的Scripts文件夹中输入CMD进入DOS界面，输入activate激活虚环境，\<br>  
         cd myshop打开项目文件。启用python manage.py runserver 运行购物网站。\<br>  
